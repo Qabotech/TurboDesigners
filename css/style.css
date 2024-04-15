@@ -1,0 +1,620 @@
+.Tree-Poster {
+    width: 100%;
+    height: 50vw !important;
+    overflow-x: hidden !important;
+}
+
+@media only screen and (max-width: 1440px) {
+    .Tree-Poster {
+        width: 100%;
+        height: 43vw !important;
+        overflow-x: hidden !important;
+    }
+}
+
+.Tree-Poster>.Container {
+    width: 90%;
+    height: 100%;
+}
+
+/*----------text ------------*/
+.Tree-Poster>.Container .text {
+    text-align: justify;
+    width: 33%;
+    gap: 5vw;
+    color: var(--F-C-);
+}
+
+.Tree-Poster .Container>div {
+    width: 33%;
+    height: 100%;
+    margin-left: 2vw;
+}
+
+.Tree-Poster>.Container .text h1,
+.P-BH1 {
+    font-size: 3vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.Tree-Poster>.Container .text p {
+    font-size: 1vw;
+    font-weight: 600;
+    margin-top: -2vw;
+    text-align: left;
+    font-family: var(--cairo-font-);
+    line-height: 1.2;
+    padding-left: 0.1vw;
+}
+
+.Tree-Poster>.Container .text h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: var(--cairo-font-);
+}
+
+.Tree-Poster>.Container .text button {
+    font-size: 1.5vw;
+    font-weight: 500;
+    background: var(--F-C-);
+    color: var(--W-C-);
+    text-transform: capitalize;
+    width: 15vw;
+    height: 4.5vw;
+    padding: 0.5vw 0;
+    border-radius: 4vw;
+    justify-content: space-around;
+}
+
+.Tree-Poster>.Container .text button .circle {
+    background: var(--O-C-);
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
+}
+
+.Tree-Poster>.Container .text button .circle i {
+    font-size: 1.5vw;
+    color: var(--W-C-);
+    margin-bottom: -20%;
+}
+
+/*----------image ------------*/
+.Tree-Poster>.Container .image {
+    position: relative;
+}
+
+.Tree-Poster>.Container .image .circle {
+    position: absolute;
+    background: var(--M-C-);
+    width: 28vw;
+    height: 28vw;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Tree-Poster>.Container .image .circle::after {
+    position: absolute;
+    content: "";
+    width: 19vw;
+    height: 30vw;
+    transform: translate(-50%, 0%) rotate(15deg);
+    top: 0%;
+    left: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://i.pinimg.com/564x/e1/7e/9d/e17e9d63f523490b2e2182fdf5b9c427.jpg");
+}
+
+/*------- icons -------------------------*/
+.Tree-Poster .Container .icons {
+    gap: 3vw;
+    margin-left: 6vw;
+}
+
+.Tree-Poster .Container .icons .box>.circle {
+    min-width: 5vw;
+    min-height: 5vw;
+    background: #dfdfdf;
+    border-radius: 50%;
+    margin-right: 1vw;
+}
+
+.Tree-Poster .Container .icons .box .txt {
+    min-width: 80%;
+}
+
+.Tree-Poster .Container .icons .box .txt h3 {
+    font-size: 1.5vw;
+}
+
+.Tree-Poster .Container .icons .box .txt p {
+    font-size: 0.9vw;
+    width: 60%;
+    line-height: 1.2;
+}
+
+/*-----------tree end------------*/
+/*-----------tree end------------*/
+/*-----------Best selling------------*/
+
+.BestSelling {
+    height: 43vw;
+    width: 100%;
+}
+
+.BestSelling .wrap {
+    height: 43vw;
+    width: 80%;
+}
+
+.BestSelling h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.BestSelling .content {
+    height: 43vw;
+    position: relative;
+    z-index: 99;
+}
+
+.BestSelling .content .rect {
+    border: var(--b-b-);
+    height: 25vw;
+    width: 85%;
+    background: var(--F-C-);
+    border-radius: 3vw;
+    transform: skew(2deg, 356deg);
+    position: relative;
+}
+
+.BestSelling .content .box {
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    transform: translateY(-50%) rotate(2deg);
+}
+
+.BestSelling .content .box:nth-child(1) {
+    left: 5%;
+}
+
+.BestSelling .content .box:nth-child(3) {
+    right: 5%;
+}
+
+.BestSelling .content .box .circle {
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    position: relative;
+    background: var(--M-C-);
+}
+
+.BestSelling .content .box .circle .img {
+    width: 18vw;
+    height: 13vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+}
+
+.BestSelling .content .box:nth-child(2) .circle {
+    background-color: var(--G-C-);
+}
+
+.BestSelling .content .box:nth-child(3) .circle {
+    background-color: var(--B-C-);
+}
+
+.BestSelling .content .box .txt h3,
+.BestSelling .content .box .txt p i,
+.BestSelling .content .box .txt p {
+    color: var(--W-C-) !important;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+
+.BestSelling .content .box .txt h3 {
+    font-size: 1.5vw;
+    font-family: var(--cairo-font-);
+}
+
+.BestSelling .content .box .txt p i,
+.BestSelling .content .box .txt p {
+    font-size: 0.8vw;
+}
+
+.BestSelling .content .box .txt p {
+    font-weight: 100;
+    margin-top: 0vw;
+}
+
+.BestSelling .content button {
+    background-color: var(--M-C-);
+    color: var(--W-C-);
+    margin-top: 20%;
+    width: 8vw;
+    height: 2.5vw;
+    text-transform: uppercase;
+    border-radius: 5vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9vw;
+    transform: rotate(2deg);
+    font-weight: 500;
+}
+
+.phone-bestselling {
+    display: none;
+}
+
+/*? ----------phone-----------*/
+
+@media only screen and (max-width: 960px) {
+    .Tree-Poster>.Container .image .circle {
+        top: 0;
+        transform: translateY(0);
+        position: inherit;
+    }
+
+    .Tree-Poster>.Container .image {
+        -webkit-transform: scale(1.5);
+        padding: 20vw 0;
+        z-index: -100;
+    }
+
+    .phone-bestselling {
+        margin-top: 2em;
+        gap: 3em;
+    }
+
+    .Tree-Poster>.Container .text button {
+        font-size: 1.5em;
+        font-weight: 500;
+        background: var(--F-C-);
+        color: var(--W-C-);
+        text-transform: capitalize;
+        width: 14.5em;
+        height: 3em;
+        padding: 0.5vw 0;
+        border-radius: 5em;
+        justify-content: space-around;
+    }
+
+    .Tree-Poster>.Container .text button .circle i {
+        font-size: 0.8em;
+        color: var(--W-C-);
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .Tree-Poster>.Container .text button .circle {
+        background: var(--O-C-);
+        border-radius: 50%;
+        height: 1.5em;
+        width: 1.5em;
+        display: grid;
+        place-content: center;
+    }
+
+    .Container>.image {
+        order: 1;
+    }
+
+    .Container>.text {
+        order: 2;
+    }
+
+    .Container>.icons {
+        order: 3;
+    }
+
+    .Container>.phone-bestselling {
+        order: 4;
+    }
+
+    .BestSelling {
+        display: none !important;
+    }
+
+    .Tree-Poster {
+        width: 100%;
+        height: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .phone-bestselling {
+        display: flex;
+    }
+
+    .phone-bestselling .cart {
+        width: 37vw;
+        height: 37vw;
+        background: var(--F-C-);
+        margin-bottom: 10vw;
+        border-radius: 4vw;
+        display: flex;
+        align-items: flex-end !important;
+        position: relative;
+    }
+
+    .phone-bestselling .cart:nth-child(3) {
+        margin-bottom: 2vw;
+    }
+
+    .phone-bestselling .cart .circle {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        position: absolute;
+        top: -20%;
+        background: var(--M-C-);
+    }
+
+    .phone-bestselling .cart .circle .img {
+        width: 30vw;
+        height: 20vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        background-size: cover;
+    }
+
+    .phone-bestselling .cart:nth-child(2) .circle {
+        background-color: var(--G-C-);
+    }
+
+    .phone-bestselling .cart:nth-child(3) .circle {
+        background-color: var(--B-C-);
+    }
+
+    .phone-bestselling .cart .txt h3,
+    .phone-bestselling .cart .txt p i,
+    .phone-bestselling .cart .txt p {
+        color: var(--W-C-) !important;
+    }
+
+    .phone-bestselling .cart .txt {
+        padding-bottom: 20%;
+    }
+
+    .Tree-Poster {
+        flex-wrap: wrap;
+        padding-top: 5em;
+    }
+
+    .Tree-Poster>.Container {
+        flex-wrap: wrap;
+    }
+
+    .Tree-Poster .Container>div {
+        min-width: 1000px !important;
+        text-align: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto !important;
+        margin-left: 0 !important;
+        padding-bottom: 4.5em;
+    }
+
+
+
+    .BestSelling,
+    nav {
+        display: none;
+    }
+
+    * {
+        text-align: center !important;
+        justify-content: center;
+        align-items: center !important;
+    }
+
+    .Tree-Poster>.Container .text h1,
+    .P-BH1 {
+        font-size: 6vw;
+
+    }
+
+    .Tree-Poster>.Container .text p {
+        font-size: 3vw;
+    }
+
+    .Tree-Poster>.Container .text h3 {
+        font-size: 4vw;
+    }
+
+
+    /*---------------------------*/
+    .Tree-Poster .Container .icons .box {
+        flex-direction: column;
+    }
+
+    .Tree-Poster .Container .icons .box .circle {
+        min-width: 20vw;
+        min-height: 20vw;
+        margin-right: 0vw;
+    }
+
+    .Tree-Poster .Container .icons .box .txt h3 {
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+
+    .Tree-Poster .Container .icons .box .txt p {
+        font-size: 3vw;
+        width: 100%;
+        padding: 5vw 20vw;
+        padding-top: 0 !important;
+    }
+
+    .Tree-Poster .Container .icons .box .circle svg {
+        -webkit-transform: scale(130%);
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .BestSelling {
+        display: none !important;
+    }
+
+    .Tree-Poster>.Container .image {
+        -webkit-transform: scale(2);
+        padding: 30vw 0;
+    }
+
+
+    .Tree-Poster .Container .icons .box .txt p {
+        font-size: 4vw;
+        width: 100%;
+        padding: 5vw 30vw;
+    }
+
+    .Tree-Poster .Container .icons .box .txt h3 {
+        font-size: 4vw;
+        padding: 1vw;
+    }
+
+    .Tree-Poster>.Container .text p {
+        font-size: 4vw;
+    }
+
+    .Tree-Poster>.Container .text h3 {
+        font-size: 5.5vw;
+    }
+
+    .Tree-Poster>.Container .text h1,
+    .P-BH1 {
+        font-size: 8vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 730px) {
+
+    .phone-bestselling .cart {
+        width: 43vw;
+        height: 43vw;
+        margin-bottom: 15vw;
+    }
+
+    .phone-bestselling .cart .circle {
+        width: 28vw;
+        height: 28vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 630px) {
+    .Tree-Poster .Container .icons .box .circle svg {
+        -webkit-transform: scale(0.8);
+    }
+
+    .Tree-Poster>.Container .image {
+        -webkit-transform: scale(2.5);
+        padding: 40vw 0;
+    }
+
+
+    .Tree-Poster .Container .icons .box .txt p {
+        font-size: 4.5vw;
+        width: 100%;
+        padding: 5vw 20vw;
+    }
+
+    .Tree-Poster .Container .icons .box .txt h3 {
+        font-size: 5vw;
+        padding: 1vw;
+        padding-top: 0.5em;
+        padding-bottom: 0em;
+    }
+
+    .phone-bestselling .cart {
+        width: 47vw;
+        height: 47vw;
+        margin-bottom: 15vw;
+    }
+
+    .phone-bestselling .cart .circle {
+        width: 33vw;
+        height: 33vw;
+    }
+
+    .phone-bestselling .cart .circle .img {
+        width: 37vw;
+        height: 27vw;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .Tree-Poster .Container .icons .box .circle svg {
+        -webkit-transform: scale(0.6);
+    }
+
+    .phone-bestselling .cart {
+        width: 57vw;
+        height: 67vw;
+        margin-bottom: 20vw;
+    }
+
+    .phone-bestselling .cart .circle {
+        width: 50vw;
+        height: 47vw;
+    }
+
+    .phone-bestselling .cart .circle .img {
+        width: 47vw;
+        height: 37vw;
+    }
+
+    .Tree-Poster>.Container .image {
+        -webkit-transform: scale(2.5);
+        padding: 40vw 0;
+    }
+
+    .Tree-Poster>.Container .text button {
+        width: 10.5em;
+        height: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .Tree-Poster>.Container .text button {
+        width: 11.5em;
+        height: 3em;
+        font-size: 1em;
+    }
+
+    .Tree-Poster>.Container .text button .circle i {
+        font-size: 0.7em;
+    }
+
+    .Tree-Poster>.Container .text button .circle {
+        height: 1.3em;
+        width: 1.3em;
+    }
+
+    .Tree-Poster .Container>div {
+        padding-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .Tree-Poster>.Container .text button {
+        width: 9.5em;
+        height: 3em;
+        font-size: 1em;
+    }
+}

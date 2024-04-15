@@ -1,0 +1,267 @@
+body h1 {
+    font-weight: 500;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+    margin-left: 5vw;
+    font-family: var(--roboto-);
+}
+
+input,
+select,
+textarea {
+    width: 40vw;
+    border: 1px solid var(--F-C-);
+    height: 3vw;
+    padding: 0 1vw;
+}
+
+textarea {
+    height: 15vw;
+    resize: none;
+    padding: 1vw;
+}
+
+select {
+    -webkit-appearance: none;
+    position: relative;
+}
+
+.select {
+    width: 40vw;
+    height: 3vw;
+    position: relative;
+}
+
+.select i {
+    position: absolute;
+    right: 1em;
+    font-size: 1em;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-0, -50%);
+}
+
+.textarea {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    bottom: 0.5em;
+}
+
+.count p {
+    color: var(--GR-C-) !important;
+    margin-left: 1vw;
+}
+
+input[type="submit"] {
+    width: 15vw;
+    height: 3vw;
+    color: var(--W-C-);
+    background: var(--F-C-);
+    margin-top: 2vw;
+    font-family: var(--roboto-);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--GR-C-) !important;
+}
+
+form {
+    margin-left: 5vw;
+    margin-bottom: 10vw;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1vw;
+}
+
+form>h3 {
+    font-weight: 400;
+    font-family: var(--roboto-) !important;
+}
+
+.ADAera {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    height: 600px;
+    transform: translate(-5vw, -50%);
+    border: 1px solid var(--F-C-);
+}
+
+.ADAera h1 {
+    font-size: 5em;
+    font-family: var(--roboto-);
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.wrap {
+    min-height: 70vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    .ADAera {
+        left: 50%;
+        top: 10%;
+        height: auto;
+        width: 70%;
+        transform: translate(-50%, -50%);
+        border: 1px solid var(--F-C-);
+    }
+
+    .ADAera h1 {
+        font-size: 3em;
+    }
+
+    .wrap {
+        min-height: 120vh;
+        display: grid;
+        place-content: center;
+        gap: 5vw;
+        padding-top: 10vh;
+    }
+
+    input,
+select,
+.select,
+textarea {
+        width: 50vw;
+        height: 5vw;
+    }
+    textarea {
+        height: 15vw;
+        resize: none;
+        padding: 1vw;
+    }
+    select{
+        height:  4vw;
+    }
+    .select{
+        height:  4vw;
+    }
+    option{
+        width: 1000px;
+    }
+    input[type="submit"] {
+        width: 20vw;
+        height: 5vw;
+        font-size: 1.2em;
+    }
+
+    ::placeholder {
+        font-size: 1.3em;
+        color: var(--GR-C-) !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    input,
+    select,
+    .select,
+    textarea {
+        width: 60vw;
+        height: 8vw;
+    }
+    textarea {
+        height: 30vw;
+        resize: none;
+        padding: 1vw;
+    }
+    select{
+        height:  7vw;
+    }
+    .select{
+        height:  7vw;
+    }
+    input[type="submit"] {
+        width: 25vw;
+        height: 8vw;
+        font-size: 1.2em;
+    }
+
+    ::placeholder {
+        font-size: 1.3em;
+        color: var(--GR-C-) !important;
+    }
+
+    .wrap {
+        min-height: 110vh;
+        height: auto;
+
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    input,
+    select,
+    .select,
+    textarea {
+        width: 70vw;
+        height: 9vw;
+    }
+    textarea {
+        height: 30vw;
+        resize: none;
+        padding: 1vw;
+    }
+    select{
+        height:  8vw;
+    }
+    .select{
+        height:  8vw;
+    }
+    ::placeholder {
+        font-size: 1em;
+        color: var(--GR-C-) !important;
+    }
+
+    form {
+        margin-left: 5vw;
+        margin-bottom: 10vw;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 4vw;
+    }
+
+    .wrap {
+        min-height: 130vh;
+        height: auto;
+    }
+
+    .ADAera {
+        width: 90%;
+    }
+
+    .ADAera h1 {
+        font-size: 3em;
+        padding: 0.5em 0;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        min-width: 30vw;
+        height: 9vw;
+        font-size: 1em;
+        padding: 0 1em;
+        display: grid;
+        place-content: center;
+        align-items: center;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .wrap {
+        min-height: 180vh;
+    }
+}

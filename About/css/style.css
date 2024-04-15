@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+nav {
+    background: transparent !important;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.header {
+    position: relative;
+    height: 80vh !important;
+    overflow: hidden;
+    border-bottom-right-radius: 10em;
+}
+
+.header img.SBG {
+    position: absolute;
+    z-index: 4;
+    object-fit: cover;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+
+.header .OverLay {
+    position: absolute;
+    background-color: rgba(11, 30, 46, 0.606);
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    padding: 0vw 10vw;
+    gap: 1em;
+    width: 100vw;
+    height: 100%;
+}
+
+.header .OverLay>* {
+    color: var(--W-C-);
+text-align: center;
+}
+
+.header .OverLay>h1 {
+    font-size: 5em;
+    font-weight: 500;
+}
+
+.header .OverLay>p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    width: 50%;
+}
+
+.why {
+    padding: 0 5vw;
+    min-height: 80vh;
+}
+
+.why>div {
+    width: 50vw;
+}
+
+.why .text {
+    gap: 3vw;
+}
+
+.why h1 {
+    font-size: 2.5vw;
+    color: var(--M-C-) !important;
+}
+
+.why p {
+    font-size: 1.5vw;
+    color: var(--F-C-) !important;
+    text-align: justify;
+    width: 85%;
+}
+
+.why .MBtn {
+    width: 25vw;
+    height: 4vw;
+    border-radius: 5vw;
+}
+
+.why .MBtn i {
+    color: var(--W-C-);
+}
+
+.why .MBtn h4 {
+    font-size: 1.3vw;
+}
+
+.img img {
+    border-radius: 2vw;
+    width: 80%;
+    height: auto;
+}
+
+.gallery .card {
+    width: 33vw;
+    text-align: center;
+    gap: 1vw;
+}
+
+.gallery .card img {
+    width: 25vw;
+    border-radius: 3vw;
+    object-fit: cover;
+}
+
+.gallery .card h3 {
+    font-size: 1.5vw;
+    color: var(--M-C-);
+    margin-bottom: -1vw;
+}
+
+.gallery .card p {
+    color: var(--GR-C-);
+}
+
+.admins .text {
+    flex-direction: column;
+    margin-bottom: 3vw;
+}
+
+.admins .text h1 {
+    color: var(--M-C-);
+}
+
+.admins .text p {
+    color: var(--GR-C-);
+}
+
+.admins {
+    margin-bottom: 10vw;
+}
+
+.Best {
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 10vw;
+    background: var(--F-C-);
+    display: none !important;
+}
+
+.Best .gallery {
+    width: 35vw;
+    position: relative;
+    height: 100%;
+}
+
+.Best .gallery img {
+    width: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    z-index: 5;
+}
+
+.Best .gallery img:nth-child(even) {
+    bottom: -20%;
+    top: unset;
+    left: unset;
+    right: 10%;
+    z-index: 2;
+}
+
+.Best .text {
+    width: auto;
+    padding: 0;
+    gap: 2em;
+}
+
+.Best .text>h1 {
+    color: var(--M-C-);
+}
+
+.Best .text h3 {
+    color: var(--W-C-);
+    width: 65%;
+    font-weight: 400;
+}
+
+.Best .text i {
+    color: var(--W-C-);
+}
+
+.Best .text .MBtn {
+    background-color: var(--F-C-);
+    border: 1px var(--W-C-) solid;
+    border-radius: 0.5vw;
+    width: 20em;
+    height: 4em;
+}
+
+.cont {
+    width: 25%;
+    display: grid;
+    place-content: center;
+}
+
+.cont img {
+    width: 15vw;
+}
+
+.main .gallery {
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.main {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.main h1 {
+    color: var(--M-C-);
+    font-size: 2em;
+}
+
+.main p {
+    font-size: 1.5em;
+    color: var(--GR-C-);
+}
+
+.main>.D-G {
+    margin-bottom: 5vw;
+}
+
+@media only screen and (max-width: 1024px) {
+    .why .MBtn {
+        display: grid;
+        place-self: center;
+    }
+
+    .why {
+        flex-direction: column;
+        gap: 3vw;
+        height: auto;
+    }
+
+    .why p {
+        width: auto;
+    }
+
+    .img img {
+        min-width: 320px;
+    }
+
+    .gallery .card {
+        min-width: 300px;
+        margin: 5vw 0;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .admins {
+        margin: 10vw 0;
+    }
+
+    .Best {
+        flex-direction: column;
+        height: auto;
+        padding:  0 10vw;
+    }
+
+    .Best .gallery {
+        height: 300px;
+        display: none;
+    }
+
+    .Best .gallery img {
+        position: absolute;
+        left: unset;
+        top: -50%;
+        min-width: 300px;
+    }
+
+    .Best .gallery img:nth-child(even) {
+        display: none;
+    }
+
+    .Best .text h1 br {
+        display: none;
+        width: 100%;
+    }
+
+    .Best .text h3 {
+        width: 100%;
+    }
+
+    .Best .text .MBtn {
+        height: 4em;
+        width: 17em !important;
+    }
+
+    .Best .MBtn h4 {
+        font-size: 1rem !important;
+    }
+
+    .Best .text {
+        height: auto;
+        width: auto;
+        gap: 2em;
+    }
+
+    .cont {
+        min-width: 250px;
+    }
+
+    .main .gallery {
+        flex-wrap: wrap;
+    }
+
+    .header {
+        max-height: 70vw !important;
+        margin-bottom: 10vw;
+    }
+
+    .header .OverLay h1 {
+        font-size: 3em;
+    }
+
+    .header .OverLay p {
+        font-size: 1em;
+    }
+
+    .header .OverLay p br {
+        display: none;
+    }
+
+    .why .text>h1 {
+        font-size: 2em;
+    }
+
+    .why .text>p {
+        font-size: 1em;
+    }
+
+    .why .text {
+        gap: 10vw;
+        margin-bottom: 10vw;
+        width: 100%;
+    }
+
+    .why .text .MBtn {
+        transform: scale(2);
+    }
+
+    .gallery .card img {
+        min-width: 250px;
+    }
+
+    .gallery .card h3 {
+        font-size: 1.3em;
+    }
+
+    .main .text {
+        padding: 0 2em;
+        gap: 1.5em;
+    }
+
+    .admins .text h1 {
+        font-size: 2em;
+    }
+
+    .admins .text p {
+        font-size: 1.5em !important;
+    }
+}

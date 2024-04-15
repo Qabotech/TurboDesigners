@@ -1,0 +1,227 @@
+nav {
+    background: transparent !important;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.header {
+    position: relative;
+    height: 80vh !important;
+}
+
+.header img.SBG {
+    position: absolute;
+    z-index: 4;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    left: 0;
+}
+
+.header .OverLay {
+    color: white;
+    position: absolute;
+    background-color: rgba(11, 30, 46, 0.606);
+    z-index: 5;
+    flex-direction: column;
+}
+
+.header .OverLay h1 {
+    color: var(--M-C-);
+    font-size: 5.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header .OverLay p {
+    color: var(--W-C-);
+    font-size: 0.8vw;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.CInfo {
+    position: relative;
+}
+
+.CInfo .email,
+.CInfo .Call {
+    width: 50vw;
+    height: 30vw;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 0 5vw;
+}
+
+.CInfo .email i,
+.CInfo .Call i {
+    color: var(--M-C-);
+    font-size: 4vw;
+    transform: rotateY(180deg);
+}
+
+.CInfo .email h2,
+.CInfo .Call h2 {
+    color: var(--M-C-);
+    font-size: 1.5vw;
+    font-weight: 900;
+    font-family: var(--roboto-);
+}
+
+.CInfo .email h3,
+.CInfo .Call h3 {
+    color: var(--GR-C-);
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--cairo-font-);
+}
+
+.CInfo .email h4,
+.CInfo .Call h4 {
+    font-family: var(--roboto-);
+    color: var(--M-C-);
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 800;
+}
+
+.CInfo .line {
+    background: var(--GR-C-);
+    width: 1px;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.btn-wrap .MBtn {
+    padding: 2vw !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    min-width: 15em;
+    margin-bottom: 10vw;
+}
+
+.btn-wrap .MBtn h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .btn-wrap .MBtn h4 {
+        font-size: 1em;
+    }
+
+    .CInfo .email h3,
+    .CInfo .Call h3 {
+        font-size: 1em;
+
+    }
+
+
+    .CInfo .email,
+    .CInfo .Call {
+        width: 100vw;
+        border: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 960px) {
+    .btn-wrap .MBtn {
+        height: 3em;
+        position: relative;
+    }
+
+
+
+    .CInfo {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .header {
+        max-height: 100vw;
+    }
+
+    .CInfo .email h4,
+    .CInfo .Call h4 {
+        font-size: 0.8em;
+    }
+
+    .CInfo .email h2,
+    .CInfo .Call h2 {
+        font-size: 1.1em;
+    }
+
+    .header .OverLay p {
+        font-size: 1.5vw;
+    }
+
+    .CInfo .email,
+    .CInfo .Call {
+        height: auto !important;
+        min-height: 15em;
+    }
+
+    .line {
+        display: flex;
+        transform: translate(-50%, -50%) rotate(90deg) !important;
+        height: 50vw !important;
+    }
+
+    .CInfo .Call {
+        width: 18.5em;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .CInfo .email i,
+    .CInfo .Call i {
+        font-size: 2em;
+    }
+
+    .CInfo .email,
+    .CInfo .Call {
+        gap: 1.5em !important;
+    }
+
+    .header .OverLay>* {
+        transform: scale(2);
+    }
+
+    .header .OverLay {
+        gap: 7vw;
+    }
+
+    .btn-wrap h4 {
+        font-size: 0.8em !important;
+    }
+
+    .btn-wrap .MBtn {
+        border-radius: 3em;
+        min-width: 10em;
+        padding: 1em !important;
+        height: 3em;
+        margin-top: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .CInfo .email h3,
+    .CInfo .Call h3 {
+        width: 90vw !important;
+    }
+}

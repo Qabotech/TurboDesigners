@@ -1,0 +1,96 @@
+.wrap {
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    margin-top: 0 !important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 600;
+    font-family: var(--roboto-);
+    padding: 0 !important;
+    padding-top: 3em !important;
+}
+
+.box {
+    width: 260px;
+    height: 260px;
+    border: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.box::after {
+    content: "hi";
+    position: absolute;
+    bottom: -2em;
+    text-align: center;
+    width: 100%;
+}
+
+.box:nth-child(1)::after {
+    content: "Graphic design";
+}
+
+.box:nth-child(2)::after {
+    content: "UI/UX Design";
+}
+
+.box:nth-child(3)::after {
+    content: "Video Editing";
+}
+
+.F-wrap .box:nth-child(1)::after {
+    content: "Intro/outro";
+}
+
+.F-wrap .box:nth-child(2)::after {
+    content: "Digital Art";
+}
+
+.F-wrap .box:nth-child(3)::after {
+    content: "Others";
+}
+
+
+
+
+img {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+}
+
+.wrap>.D-F {
+    gap: 10vw;
+    width: 100%;
+}
+
+.wrap>.D-F:nth-child(2) {
+    margin-top: 10vw;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .wrap>.D-F {
+        gap: 10vw;
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .wrap>.D-F .box::after {
+        width: 260px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .wrap {
+        margin-top: 10vw;
+    }
+}

@@ -1,0 +1,212 @@
+body h1 {
+    font-weight: 500;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+    margin-left: 5vw;
+    font-family: var(--roboto-);
+}
+
+input {
+    width: 40vw;
+    border: 1px solid var(--F-C-);
+    height: 3vw;
+    padding: 1vw;
+}
+
+input[type="submit"] {
+    width: 15vw;
+    height: 3vw;
+    color: var(--W-C-);
+    background: var(--F-C-);
+    margin-top: 2vw;
+    font-family: var(--roboto-);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--GR-C-) !important;
+}
+
+form {
+    margin-left: 5vw;
+    margin-bottom: 10vw;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1vw;
+}
+
+form>h3 {
+    font-weight: 400;
+    font-family: var(--roboto-) !important;
+}
+
+.ADAera {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    height: 600px;
+    transform: translate(-5vw, -50%);
+    border: 1px solid var(--F-C-);
+}
+
+.ADAera h1 {
+    font-size: 5em;
+    font-family: var(--roboto-);
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.wrap {
+    min-height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+    input {
+        height: 3em;
+    }
+
+    input[type="submit"] {
+
+        height: 2em;
+    }
+
+
+}
+
+@media only screen and (max-width: 960px) {
+    body h1 {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+
+
+
+    .wrap {
+        gap: 0 !important;
+    }
+
+    ::placeholder {
+        text-align: left !important;
+    }
+
+    form {
+        margin-left: 0;
+        gap: 0.75em !important;
+    }
+
+    .ADAera {
+        left: 50%;
+        top: 10%;
+        height: auto;
+        width: 70%;
+        transform: translate(-50%, -50%);
+        border: 1px solid var(--F-C-);
+    }
+
+    .ADAera h1 {
+        font-size: 3em;
+    }
+
+    .wrap {
+        min-height: 120vh;
+        display: grid;
+        place-content: center;
+        gap: 5vw;
+        padding-top: 10vh;
+    }
+
+    input {
+        width: 50vw;
+        height: 5vw;
+    }
+
+    input[type="submit"] {
+        width: 20vw;
+        height: 5vw;
+        font-size: 1.2em;
+    }
+
+    ::placeholder {
+        font-size: 1.3em;
+        color: var(--GR-C-) !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    input {
+        width: 60vw;
+        height: 8vw;
+    }
+
+    input[type="submit"] {
+        width: 25vw;
+        height: 8vw;
+        font-size: 1.2em;
+    }
+
+    ::placeholder {
+        font-size: 1.3em;
+        color: var(--GR-C-) !important;
+    }
+
+    .wrap {
+        min-height: 100vh;
+        height: auto;
+
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    input {
+        height: 3em !important;
+        width: 80vw;
+    }
+
+    ::placeholder {
+        font-size: 1em;
+        color: var(--GR-C-) !important;
+    }
+
+    form {
+        margin-left: 5vw;
+        margin-bottom: 10vw;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 4vw;
+    }
+
+    .wrap {
+        min-height: 130vh;
+        height: auto;
+    }
+
+    .ADAera {
+        width: 90%;
+    }
+
+    .ADAera h1 {
+        font-size: 3em;
+        padding: 0.5em 0;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        min-width: 30vw;
+        height: 9vw;
+        font-size: 1em;
+        padding: 0 1em;
+        display: grid;
+        place-content: center;
+        align-items: center;
+        place-items: center;
+    }
+}
