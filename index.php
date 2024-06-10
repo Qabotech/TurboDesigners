@@ -18,7 +18,8 @@ include("./Inc/phoneNav.php");
                 you buy it
             </p>
             <h3>$ 9.99</h3>
-            <button class="D-F" onclick="window.location = '../Store/' " style="cursor: pointer;">
+            <button class="D-F" onclick="window.location = 'https://alowlaomar.de/TurboDesigners/Store/' "
+                style="cursor: pointer;">
                 Buy now
                 <div class="circle D-G">
                     <i class="fas fa-angle-right"></i>

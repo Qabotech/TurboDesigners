@@ -22,7 +22,8 @@ session_start();
         content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
     <script src="https://kit.fontawesome.com/2ce93a0a32.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/app.js?v=1"></script>
+    <script src="../js/app.js?v=2"></script>
+    <script src="./js/app.js?v=2"></script>
     <script src="./js/main.js?t=50" defer></script>
     <script>
     $(window).on("load", function() {

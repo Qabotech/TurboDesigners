@@ -14,11 +14,10 @@ function emptyInputSignup($FSname, $Email, $Phone, $PWD, $rePWD, $Country)
 
 function UidExisits($conn, $Email)
 {
-    $sql = "SELECT * FROM tdusers WhERE email = ?";
+    $sql = "SELECT * FROM tdusers WHERE email = ?";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../Register/?error=stmtFaildedd");
-        exit();
+        return false; 
     }
 
     mysqli_stmt_bind_param($stmt, "s", $Email);
@@ -29,8 +28,7 @@ function UidExisits($conn, $Email)
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
     } else {
-        $result = false;
-        return $result;
+        return false;
     }
 
     mysqli_stmt_close($stmt);
@@ -39,10 +37,10 @@ function UidExisits($conn, $Email)
 
 function createUser($conn, $FSname, $Email, $Phone, $PWD, $Country)
 {
-    $sql = "INSERT tdusers (FSname,Email,Phone,PWD,Country) VALUES (?,?,?,?,?);";
+    $sql = "INSERT INTO tdusers (FSname, Email, Phone, PWD, Country) VALUES (?, ?, ?, ?, ?)";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../Register/?error=stmtFaildd");
+        header("Location: https://alowlaomar.de/TurboDesigners/Register/?error=stmtFailed");
         exit();
     }
 
@@ -51,9 +49,10 @@ function createUser($conn, $FSname, $Email, $Phone, $PWD, $Country)
     mysqli_stmt_bind_param($stmt, "sssss", $FSname, $Email, $Phone, $hashedPwd, $Country);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../Register/?error=none+WELCOME+TO+TURBO");
+    header("Location: https://alowlaomar.de/TurboDesigners/Register/?error=none+WELCOME+TO+TURBO");
     exit();
 }
+
 
 function InvalidEmail($Email)
 {
@@ -90,7 +89,7 @@ function loginUser($conn, $Email, $PWD)
     $uidExistsed = UidExisits($conn, $Email);
 
     if ($uidExistsed === false) {
-        header("location: ../Login/?error=WrongLogin");
+        header("location: https://alowlaomar.de/TurboDesigners/Login/?error=WrongLogin");
 
         exit();
     }
@@ -100,7 +99,7 @@ function loginUser($conn, $Email, $PWD)
     $checkPWD = password_verify($PWD, $pwdHashed);
 
     if ($checkPWD === false) {
-        header("location: ../Login/?error=WrongLogin");
+        header("location: https://alowlaomar.de/TurboDesigners/Login/?error=WrongLogin");
         exit();
     } else if ($checkPWD === true) {
         session_start();
@@ -110,7 +109,7 @@ function loginUser($conn, $Email, $PWD)
         $_SESSION["FSname"] =   $uidExistsed["FSname"];
         $_SESSION["Phone"] =    $uidExistsed["Phone"];
         $_SESSION["Country"] =  $uidExistsed["Country"];
-        header("location: ../index.php?hiUser");
+        header("location: https://alowlaomar.de/TurboDesigners/index.php?hiUser");
         exit();
     }
 }

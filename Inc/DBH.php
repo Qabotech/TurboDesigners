@@ -1,8 +1,8 @@
 <?php
-$serverName = "sql311.infinityfree.com";
-$DBUName = "if0_34932725";
-$DBPass = "yATOuX2udsAKVH";
-$DBName = "if0_34932725_td";
+$serverName = "localhost";
+$DBUName = "root";
+$DBPass = "!QTdb404";
+$DBName = "td";
 
 
 $conn = mysqli_connect($serverName, $DBUName, $DBPass, $DBName);
