@@ -1,16 +1,16 @@
 function IsLogged() {
     $(".sys li:nth-child(2) a").html('Log Out');
-    $(".sys li:nth-child(2) a").attr("href", "../logout/")
-    $(".sys li:nth-child(1) a").attr("href", "../UserProfile/")
-    $(".this2").attr("href", "../UserProfile/")
-    $(".this").attr("href", "../logout/");
+    $(".sys li:nth-child(2) a").attr("href", "https://alowlaomar.de/TurboDesigners/logout/")
+    $(".sys li:nth-child(1) a").attr("href", "https://alowlaomar.de/TurboDesigners/logout/")
+    $(".this2").attr("href", "https://alowlaomar.de/TurboDesigners/UserProfile/")
+    $(".this").attr("href", "https://alowlaomar.de/TurboDesigners/logout/");
 }
 
 function NoLogged() {
-    $(".this2").attr("href", "../Register/")
+    $(".this2").attr("href", "https://alowlaomar.de/TurboDesigners/Register/")
     $(".sys li:nth-child(2) a").html('Login');
-    $(".sys li:nth-child(2) a").attr("href", "../Login/");
-    $(".this").attr("href", "../Login/");
+    $(".sys li:nth-child(2) a").attr("href", "https://alowlaomar.de/TurboDesigners/Login/");
+    $(".this").attr("href", "https://alowlaomar.de/TurboDesigners/Login/");
 }
 
 $('a').attr("aria-label", "Turbo Designers");
@@ -19,12 +19,12 @@ $('button').attr("aria-label", "Turbo Designers");
 function PhoneNav() {
     $(".P-nav").hide();
 
-    $("#F-X").click(function () {
+    $("#F-X").click(function() {
         $(".P-nav").hide();
         $("body").css("overflow", "auto");
         $(".fa-bars-staggered").attr("style", "display:gird !important;");
     })
-    $(".fa-bars-staggered").click(function () {
+    $(".fa-bars-staggered").click(function() {
         $(".P-nav").show();
         $("body").css("overflow", "hidden");
         $(".fa-bars-staggered").attr("style", "display:none !important;");
@@ -32,7 +32,7 @@ function PhoneNav() {
 }
 
 function reload() {
-    window.onload = function () {
+    window.onload = function() {
 
         if (!window.location.hash) {
             $('.loading').hide();
@@ -92,7 +92,3 @@ if (window.location.href.indexOf("Custom-Order-Details") > -1) {
 }
 
 $("body").css('overflow', 'hidden');
-
-
-
-

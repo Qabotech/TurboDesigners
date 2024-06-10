@@ -1,6 +1,5 @@
 <?php
 
-
 if (isset($_POST["send"])) {
     $FSname = $_POST["FSname"];
     $Email = $_POST["Email"];
@@ -10,32 +9,28 @@ if (isset($_POST["send"])) {
     $Country = $_POST["Country"];
 
     include('./func.inc.php');
-    include_once('./func.inc.php');
     include('./DBH.php');
-    /* 
-    CREATE TABLE `epiz_32201422_td`.`tdusers` ( `ID` INT NOT NULL , `FSname` VARCHAR(255) NOT NULL , `Email` VARCHAR(255) NOT NULL , `Phone` VARCHAR(255) NOT NULL , `PWD` VARCHAR(255) NOT NULL , `Country` VARCHAR(255) NOT NULL ) ENGINE = MyISAM;
-    */
 
-
-
-    if (emptyInputSignup($FSname, $Email, $Phone, $PWD, $rePWD, $Country) !== false) {
-        header("location: ../Register/?error=emptyInput");
+    if (emptyInputSignup($FSname, $Email, $Phone, $PWD, $rePWD, $Country)) {
+        header("location: https://alowlaomar.de/TurboDesigners/Register/?error=emptyInput");
         exit();
     }
-    if (InvalidEmail($Email) !== false) {
-        header("location: ../Register/?error=InvalidEmail");
+    if (InvalidEmail($Email)) {
+        header("location: https://alowlaomar.de/TurboDesigners/Register/?error=InvalidEmail");
         exit();
     }
-    if (PWDMatch($PWD, $rePWD) !== false) {
-        header("location: ../Register/?error=PWDnoMatch");
+    if (PWDMatch($PWD, $rePWD)) {
+        header("location: https://alowlaomar.de/TurboDesigners/Register/?error=PWDnoMatch");
         exit();
     }
-    if (UidExisits($conn, $Email) !== false) {
-        header("location: ../Register/?error=EmailTaken");
+    if (UidExisits($conn, $Email)) {
+        header("location: https://alowlaomar.de/TurboDesigners/Register/?error=EmailTaken");
         exit();
     }
     createUser($conn, $FSname, $Email, $Phone, $PWD, $Country);
     exit();
 } else {
-    header("location: ../login/");
+    header("location: https://alowlaomar.de/TurboDesigners/login/");
 }
+
+?>
